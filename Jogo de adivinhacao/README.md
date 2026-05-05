@@ -1,53 +1,46 @@
-# Calculadora Simples em C
+# Jogo da Adivinhacao em C
 
-Calculadora de terminal desenvolvida em C como projeto de portfólio para praticar lógica de programação.
+Jogo de terminal desenvolvido em C como projeto de portfólio para praticar lógica de programação.
 
-## Funcionalidades
+## Como jogar
 
-- Adição
-- Subtração
-- Multiplicação
-- Divisão (com proteção contra divisão por zero)
-- Validação de opção inválida
+O programa gera um número secreto aleatório entre 1 e 100. O jogador deve tentar adivinhar o número e o programa dá dicas se o chute foi alto ou baixo, até o jogador acertar.
 
 ## Como compilar e executar
 
-**Linux / Mac:**
-```bash
-gcc c1.c -o calculadora
-./calculadora
-```
-
 **Windows (terminal do VS Code):**
 ```bash
-gcc c1.c -o c1.exe
-./c1.exe
+gcc adivinhacao.c -o adivinhacao.exe
+./adivinhacao.exe
+```
+
+**Linux / Mac:**
+```bash
+gcc adivinhacao.c -o adivinhacao
+./adivinhacao
 ```
 
 ## Exemplo de uso
 
 ```
-==============================
-|  Calculadora Simples em C  |
-==============================
-1. Adicao
-2. Subtracao
-3. Multiplicacao
-4. Divisao
-0. Sair
-Escolha uma operacao (0-4): 1
-Voce escolheu Adicao.
-Digite o primeiro numero: 10
-Digite o segundo numero: 5
-O resultado da adicao e: 15.00
+Bem-vindo ao Jogo de Adivinhacao!
+Tente adivinhar o numero secreto entre 1 e 100.
+Digite seu chute: 50
+Muito alto! Tente um numero menor.
+Digite seu chute: 25
+Muito baixo! Tente um numero maior.
+Digite seu chute: 37
+Parabens! Voce adivinhou o numero secreto 37
+Numero de tentativas: 3
 ```
 
 ## Conceitos praticados
 
 - `printf` e `scanf` para entrada e saída de dados
-- `if / else` para validação e tratamento de erros
-- `switch` para controle do menu de operações
-- `while` para revalidação de opção inválida
+- `srand` e `rand` para geração de números aleatórios
+- `if / else` para dar dicas ao jogador
+- `while` para repetir o jogo até o jogador acertar
+- Contador de tentativas com variável inteira
 
 ## Autor
 
